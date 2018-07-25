@@ -1,0 +1,39 @@
+<h1>
+<!-- here we echo the title from the component -->
+    {{title}}
+</h1>
+
+<input type="files" name="file" ng2FileSelect [uploader]="uploader" />
+
+<!-- <button type="button" class="btn btn-success btn-s" 
+  (click)="uploader.uploadAll()" 
+  [disabled]="!uploader.getNotUploadedItems().length" >
+      Upload an Image
+</button> -->
+
+<input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+<!-- button to trigger the file upload when submitted -->
+<button type="button" class="btn btn-success btn-s" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+    Upload
+</button>
+
+<div style="text-align:left;width:500px;" *ngIf="result">
+        <h1>
+            Excel to JSON Conversion Result!
+        </h1>
+    <table >
+        <!-- ADD HEADERS -->
+        <tr>
+            <th>ID</th>
+                <th>Name of Book Title</th>
+                    <th>Book Author</th>
+        </tr>
+  
+        <!-- BIND ARRAY TO TABLE -->
+        <tr *ngFor="let json of result">
+            <td>{{json.bookid}}</td>
+                <td>{{json.booktitle}}</td>
+                    <td>{{json.bookauthor}}</td>
+        </tr>
+    </table>
+  </div>

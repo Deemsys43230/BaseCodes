@@ -1,0 +1,529 @@
+{
+	"id": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+	"name": "NgCrud Collection",
+	"description": "",
+	"order": [
+		"fc5ec755-1f2b-8a2d-e35e-46118f54201c"
+	],
+	"folders": [
+		{
+			"name": "Authentication",
+			"description": "",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"order": [
+				"45edf86d-83d9-91a0-f21d-e9b727548ca3",
+				"66ae5fc6-09a0-709d-a6c4-ff868ba15c46",
+				"49e4a1cd-a583-366d-0032-30b60d06a0e7",
+				"5bc159af-264b-8652-d69f-19255931cf40"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "c0d2b418-d10a-ef6f-197f-ab5ee9b5bd63"
+		},
+		{
+			"name": "JOin Collection",
+			"description": "",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"order": [
+				"254a0096-4e9a-4fdc-4728-7651e382268d",
+				"f07e51fb-afb9-860c-f14a-7bef783158d6",
+				"7617044d-cdce-3369-8ab0-0427131cbbb1",
+				"e8ac1bad-623a-45ae-ac25-6a37467d8982"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "4b586b0c-5491-6e7e-aff4-d605cd8dfb3b"
+		},
+		{
+			"name": "Pagination",
+			"description": "",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"order": [
+				"faaada6c-9317-626f-a22a-6e91a8d2c7ae",
+				"2fd0e547-bdfb-765d-8f60-bf9aee17e8ea",
+				"8d47ce98-1976-6823-a987-efbea31c6ae6",
+				"5780b15e-a661-4de7-ce2c-6c60bb07bca1"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "6a4cc783-697c-1ee1-81f3-26fa4fdf0a5f"
+		}
+	],
+	"folders_order": [
+		"6a4cc783-697c-1ee1-81f3-26fa4fdf0a5f",
+		"4b586b0c-5491-6e7e-aff4-d605cd8dfb3b",
+		"c0d2b418-d10a-ef6f-197f-ab5ee9b5bd63"
+	],
+	"timestamp": 1532158709099,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "254a0096-4e9a-4fdc-4728-7651e382268d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/user/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159320654,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4b586b0c-5491-6e7e-aff4-d605cd8dfb3b",
+			"rawModeData": "{\n\t\"username\":\"User4\",\n\t\"email\":\"user4@gmail.com\",\n\t\"gender\":\"female\",\n\t\"phone\":\"9543210876\",\n\t\"address\":\"sample address3\"\n}"
+		},
+		{
+			"id": "2fd0e547-bdfb-765d-8f60-bf9aee17e8ea",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/coins",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get All Coins",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532158945077,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "6a4cc783-697c-1ee1-81f3-26fa4fdf0a5f"
+		},
+		{
+			"id": "45edf86d-83d9-91a0-f21d-e9b727548ca3",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [
+				{
+					"key": "username",
+					"value": "coach",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "coach",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "coach",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "create User ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159492736,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "c0d2b418-d10a-ef6f-197f-ab5ee9b5bd63"
+		},
+		{
+			"id": "49e4a1cd-a583-366d-0032-30b60d06a0e7",
+			"headers": "Authorization: Bearer dac4c42c21090a5edcf1a39a3eb05e628b75fe74\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer dac4c42c21090a5edcf1a39a3eb05e628b75fe74",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/coach",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get profile by sending access token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159533416,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "c0d2b418-d10a-ef6f-197f-ab5ee9b5bd63"
+		},
+		{
+			"id": "5780b15e-a661-4de7-ce2c-6c60bb07bca1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/coins/filter",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Coins filter with and or Operator",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532158980736,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "6a4cc783-697c-1ee1-81f3-26fa4fdf0a5f",
+			"rawModeData": "{\n\t\"name\":\"dime\",\n\t\"firstname\":\"\"\n}"
+		},
+		{
+			"id": "5bc159af-264b-8652-d69f-19255931cf40",
+			"headers": "Authorization: Bearer dac4c42c21090a5edcf1a39a3eb05e628b75fe74\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer dac4c42c21090a5edcf1a39a3eb05e628b75fe74",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/coach",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": null,
+			"dataMode": "params",
+			"name": "validating user by sending the auth token code",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159590437,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "c0d2b418-d10a-ef6f-197f-ab5ee9b5bd63"
+		},
+		{
+			"id": "66ae5fc6-09a0-709d-a6c4-ff868ba15c46",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/oauth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "coach",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "coach",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "democlient",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "democlientsecret",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "coach",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Genarating Token without Authoriaztion header",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159501358,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "c0d2b418-d10a-ef6f-197f-ab5ee9b5bd63"
+		},
+		{
+			"id": "7617044d-cdce-3369-8ab0-0427131cbbb1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/user/getFriends",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Friends with join",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159372068,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4b586b0c-5491-6e7e-aff4-d605cd8dfb3b"
+		},
+		{
+			"id": "8d47ce98-1976-6823-a987-efbea31c6ae6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/coins/search",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Filter Coins with pagination",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532158962608,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "6a4cc783-697c-1ee1-81f3-26fa4fdf0a5f",
+			"rawModeData": "{\n\t\"name\":\"sample\",\n\t\"price\":\"10\",\n\t\"page\":\"1\",\n\t\"perPage\":\"9\"\n}"
+		},
+		{
+			"id": "e8ac1bad-623a-45ae-ac25-6a37467d8982",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/user/updateFriends",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Freinds with passing id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159392885,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4b586b0c-5491-6e7e-aff4-d605cd8dfb3b",
+			"rawModeData": "{\n\t\"userid\":\"5b49ab77d8be1e02b8202ec4\",\n\t\"friendid\":\"5b49ab1dd8be1e02b8202ec2\"\n}"
+		},
+		{
+			"id": "f07e51fb-afb9-860c-f14a-7bef783158d6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/user/getuser",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Users",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159353283,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4b586b0c-5491-6e7e-aff4-d605cd8dfb3b"
+		},
+		{
+			"id": "faaada6c-9317-626f-a22a-6e91a8d2c7ae",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/coins/add",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create Coins",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532158899779,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "6a4cc783-697c-1ee1-81f3-26fa4fdf0a5f",
+			"rawModeData": "{\n\t\"firstname\":\"doller\",\n\t\"lastname\":\"coin\",\n\t\"name\":\"dime\",\n\t\"price\":\"5\"\n}"
+		},
+		{
+			"id": "fc5ec755-1f2b-8a2d-e35e-46118f54201c",
+			"headers": "//Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:4000/upload",
+			"queryParams": [
+				{
+					"key": "sampleFile",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "140d9208-faea-a2ca-6a29-c5f36e8c198e",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Excel file upload and conver to Json and Save to data base with validation",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1532159720910,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
