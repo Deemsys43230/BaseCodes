@@ -1,0 +1,27 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "async": "2.1.4",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "4.0.0",
+    "express": "^4.16.3",
+    "keystone": "4.0.0-beta.5",
+    "lodash": "^4.13.1",
+    "pug": "2.0.0-beta11",
+    "restful-keystone": "^0.3.0",
+    "stylus": "0.54.5"
+  },
+  "devDependencies": {
+    "eslint": "3.15.0",
+    "eslint-config-keystone": "3.0.0",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node keystone.js",
+    "compile": "stylus -w public/styles/site.styl -o public/styles/site.css"
+  }
+}
